@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:identity/webview_screen.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:url_launcher/url_launcher_string.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -9,7 +9,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Olatunji Ruth'),
+        title: Text('TechORB'),
       ),
       body: Center(
         child: Padding(
@@ -17,7 +17,7 @@ class HomeView extends StatelessWidget {
           child: Column(
             children: [
               CircleAvatar(
-                radius: 100.0,
+                radius: 80.0,
                 backgroundImage: AssetImage('images/Ruth.JPG'),
               ),
               SizedBox(
@@ -25,9 +25,11 @@ class HomeView extends StatelessWidget {
               ),
               ElevatedButton(
                   onPressed: () {
-                    launchUrlString('https://github.com/OlatunjI-Ruth');
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => WebViewPage()));
                   },
-                  child: Text('Open Github'))
+                  child: Text('Open Github')),
+              // Expanded(child: SizedBox())
             ],
           ),
         ),
