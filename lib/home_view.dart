@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:identity/webview_screen.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -9,29 +8,30 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('TechORB'),
+        title: const Text('Tech ORB'),
       ),
       body: Center(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 8.0),
-          child: Column(
-            children: [
-              CircleAvatar(
-                radius: 80.0,
-                backgroundImage: AssetImage('images/Ruth.JPG'),
-              ),
-              SizedBox(
-                height: 10.0,
-              ),
-              ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => WebViewPage()));
-                  },
-                  child: Text('Open Github')),
-              // Expanded(child: SizedBox())
-            ],
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            const SizedBox(height: 10.0),
+            const CircleAvatar(
+              radius: 100.0,
+              backgroundImage: AssetImage('images/Ruth.JPG'),
+            ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const WebViewPage()));
+                },
+                child: const Text('Open GitHub')),
+            const Expanded(child: SizedBox())
+          ],
         ),
       ),
     );

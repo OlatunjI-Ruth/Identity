@@ -22,7 +22,7 @@ class _WebViewPageState extends State<WebViewPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Github profile"),
+        title: const Text("Github profile"),
       ),
       body: WebViewWidget(controller: controller),
     );
