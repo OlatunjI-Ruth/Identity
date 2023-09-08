@@ -12,7 +12,9 @@ Since there was no specific name given for the App, it was named identity by me.
 The home page of the app consists of an AppBar with the title "Tech ORB" pronounced "Tech HUB". Tech ORB (Olatunji Ruth Blessing) is a response to the first requirement of the task which says that "The application's main screen should prominently display your slack name". I wasn't sure which of the names was referred to (The real name or the display name) because it was said that we should use a unique name, so points will not be awarded to someone else. This is the reason for Tech ORB as i believe it is unique. However, my name on slack is Olatunji Ruth. 
 
 ##Links.
+
 Appetize preview link for android.
+
 https://appetize.io/app/hliw4z2l22oljbkagwolaa755i?device=pixel4&osVersion=11.0&scale=75
 
 
